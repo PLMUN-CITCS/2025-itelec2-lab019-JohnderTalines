@@ -1,6 +1,5 @@
 def get_student_score():
-
-    Prompts the user to enter their score and returns it as a numerical type.
+    """Prompts the user to enter their score and returns it as a numerical type."""
 
     try:
     while True:
@@ -10,8 +9,7 @@ def get_student_score():
             print("Invalid input. Please enter a numeric value.")
 
 def calculate_grade(score):
-
-    Determines the letter grade based on the given score.
+    """Determines the letter grade based on the given score."""
     
     Parameters:
     score (float): The score to evaluate.
@@ -31,8 +29,7 @@ def calculate_grade(score):
         return 'F'
 
 def main():
-
-    Main program flow to get the student's score and calculate the grade.
+    """Main program flow to get the student's score and calculate the grade."""
 
     score = get_student_score()
     grade = calculate_grade(score)
