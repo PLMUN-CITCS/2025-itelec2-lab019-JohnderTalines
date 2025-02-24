@@ -3,12 +3,13 @@ def get_student_score():
     Handles user input to obtain the student's score.
     Prompts the user to enter their score and returns it as a numerical type.
     """
+
     while True:
         try:
-            score = float(input("Please enter your score: "))  # Read input and convert to float
-            return score  # Return the numerical score
+            score = float(input("Please enter your score: "))
+            return score
         except ValueError:
-            print("Invalid input. Please enter a numeric value.")  # Handle non-numeric input
+            print("Invalid input. Please enter a numeric value.")
 
 def calculate_grade(score):
     """
@@ -21,23 +22,23 @@ def calculate_grade(score):
     str: The corresponding letter grade ('A', 'B', 'C', 'D', or 'F').
     """
     if score >= 90:
-        return 'A'  # Grade A for scores 90 and above
+        return 'A'
     elif score >= 80:
-        return 'B'  # Grade B for scores 80 to 89
+        return 'B'
     elif score >= 70:
-        return 'C'  # Grade C for scores 70 to 79
+        return 'C'
     elif score >= 60:
-        return 'D'  # Grade D for scores 60 to 69
+        return 'D'
     else:
-        return 'F'  # Grade F for scores below 60
+        return 'F'
 
 def main():
     """
     Main program flow to get the student's score and calculate the grade.
     """
-    score = get_student_score()  # Call function to get the student's score
-    grade = calculate_grade(score)  # Call function to calculate the grade
-    print(f"Your grade is: {grade}")  # Display the calculated grade
+    score = get_student_score()
+    grade = calculate_grade(score)
+    print(f"Your grade is: {grade}")
 
 if __name__ == "__main__":
-    main()  # Execute the main function
+    main()
