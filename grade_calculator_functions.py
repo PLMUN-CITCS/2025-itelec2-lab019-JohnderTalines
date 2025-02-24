@@ -1,4 +1,5 @@
 def get_student_score():
+
     Handles user input to obtain the student's score.
     
     Returns:
@@ -12,6 +13,7 @@ def get_student_score():
             print("Invalid input. Please enter a numeric value.")
 
 def calculate_grade(score):
+
     Determines the letter grade based on the given score and grading scale.
     
     Parameters:
