@@ -1,8 +1,8 @@
-try:
 def get_student_score():
     """
     Prompts the user to enter their score and returns it as a numerical type.
     """
+try:
     while True:
             score = float(input("Please enter your score: "))
             return score
