@@ -26,4 +26,3 @@ def main():
     grade = calculate_grade(score)
     	print(f"The grade for a score of {score} is: {grade}")
 main()
-
