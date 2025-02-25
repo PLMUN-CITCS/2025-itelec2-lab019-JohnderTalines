@@ -5,10 +5,10 @@ def get_student_score():
     while True:
         try:
             score = input("Please enter your score: ")
-            # Convert input to float, allowing for decimal scores
+            # Convert input to float, which can handle both integer and decimal scores
             score = float(score)
-            if score < 0:
-                print("Score cannot be negative. Please enter a valid score.")
+            if score < 0 or score > 100:
+                print("Score must be between 0 and 100. Please try again.")
             else:
                 return score
         except ValueError:
@@ -22,7 +22,7 @@ def calculate_grade(score):
     score (numeric): The score to evaluate.
     
     Returns:
-    str: The corresponding letter grade.
+    string: The corresponding letter grade.
     """
     if score >= 90:
         return 'A'
@@ -43,5 +43,6 @@ def main():
     grade = calculate_grade(score)
     print(f"Your grade is: {grade}")
 
+# Run the main program
 if __name__ == "__main__":
     main()
